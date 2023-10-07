@@ -6,7 +6,7 @@ app = Flask(__name__)
 CORS(app)  # Allow all origins
 
 
-@app.route('/api/calculate', methods=['POST'])
+@app.route('/', methods=['POST'])
 def calculate_route():
     return calculate(request)
 
